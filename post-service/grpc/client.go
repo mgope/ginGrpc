@@ -15,7 +15,7 @@ type UserGrpcClient struct {
 
 func NewUserGrpcClient() *UserGrpcClient {
 
-	conn, err := grpc.Dial(
+	conn, err := grpc.NewClient(
 		"localhost:50051",
 		grpc.WithTransportCredentials(
 			insecure.NewCredentials(),
