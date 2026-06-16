@@ -45,8 +45,8 @@ func main() {
 	})
 
 	g.Go(func() error {
-		log.Println("HTTP server running on :8080")
-		return router.Run(":8080")
+		log.Println("HTTP server running on :8081")
+		return router.Run(":8081")
 	})
 
 	if err := g.Wait(); err != nil {
